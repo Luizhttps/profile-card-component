@@ -1,0 +1,59 @@
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    text-align: center;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: -80% 180%, 180% -90%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 12%;
+    box-shadow: 5px 10px 25px #00000054;
+}
+
+.wallpaper{
+    width: 350px;
+    height: 140px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(./images/bg-pattern-card.svg);
+}
+.bio img{
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+    margin-top: -48px;
+}
+.bio span, .bio h3{color: var(--Dark-gray); font-weight: 300;}
+
+.interactions{
+    border-top: 1px solid rgba(0,0,0,0.10);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.interactions h3{
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+.interactions p{
+    color: var(--Dark-gray);
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 300;
+}
